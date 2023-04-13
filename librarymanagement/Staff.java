@@ -8,6 +8,51 @@ package librarymanagement;
  *
  * @author szakr
  */
-public class Staff {
+public class Staff extends Account {
     
+    /*
+    Tentative Java import(s): 
+    import java.util.ArrayList;
+    import java.util.Hashtable; OR import java.util.HashMap;
+    import java.util.List;
+    */
+    
+    //private Hashtable<Integer, Book> books;  
+    //private Hashtable<Integer, User> members;
+    //May be alternatively <String, Book> or <String, User>
+    
+     public Staff(String username, String password, String email, String phone, int id) 
+     {
+        super(username, password, email, phone, id);
+     }
+    
+     public Book addBook(Book book) 
+     {
+        // Code to add a book to the library and save in file
+        //adding to the Book database hurray
+     }
+    
+     //tentative parameters: int bookID, boolean isReserved
+     public void markBookReserved() 
+     {
+        // Code to mark a book as reserved or not reserved
+     }
+   
+    //tentative parameters: all properties from Book Class
+     public void modifyBook() 
+     {
+        // Code to modify book information
+     }
+
+    //tentative parameters: int bookId and List <User> members?
+    public void lendBook() 
+    {
+        // Code to lend a book to a list of users
+    }
+
+    public void addMember(User member) 
+    {
+        // Code to add a member 
+    }
+
 }
