@@ -18,7 +18,8 @@ public class Account {
     //some fields may be unnecessary, feel free to make it redundant
    
 
-    public Account(String username, String password, String email, String phone, int id) {
+    public Account(String username, String password, String email, String phone, int id)
+    {
         this.username = username;
         this.password = password;
         this.email = email;
@@ -26,9 +27,11 @@ public class Account {
         this.id = id;
     }
 
-     public Book searchBook(String bookTitle) {
+    
+     public Book searchBook(String bookTitle) 
+     {
         // Code to search for a book in the library
-    }
+     }
     
     //Will add getters and setters for all fields later
 
