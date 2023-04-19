@@ -14,9 +14,9 @@ public class Staff extends Account {
     //private Hashtable<String, User> members;
     //May be alternatively <String, Book> or <String, User>
     
-     public Staff(String username, String password) 
+     public Staff(String accountID, String password) 
      {
-        super(username, password);
+        super(accountID, password);
      }
     
      public Book addBook(Book book) 
