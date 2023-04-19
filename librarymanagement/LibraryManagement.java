@@ -19,6 +19,7 @@ public class LibraryManagement {
         String[] accounts = {
             "123456",
             "134567",
+            "223432",
             "213456",
             "245678",
             "345678",
@@ -29,7 +30,8 @@ public class LibraryManagement {
             acc = loginFact.createAccountType(account);
             
         }
-        
+        System.out.println("Supplier");
+        System.out.println("Key\t\tAccount ID      Password");
         System.out.println(Library.supplierDatabase);
     }
     
