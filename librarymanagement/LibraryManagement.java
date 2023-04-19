@@ -14,7 +14,23 @@ public class LibraryManagement {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        LogInFactory loginFact = new LogInFactory();
+        Account acc;
+        String[] accounts = {
+            "123456",
+            "134567",
+            "213456",
+            "245678",
+            "345678",
+            "398678"
+        };
+        
+        for (String account : accounts) {
+            acc = loginFact.createAccountType(account);
+            
+        }
+        
+        System.out.println(Library.supplierDatabase);
     }
     
 }
