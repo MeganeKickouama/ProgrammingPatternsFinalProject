@@ -12,19 +12,12 @@ public class Account {
     
     private String username;
     private String password;
-    private String email;
-    private String phone;
-    private int id; 
-    //some fields may be unnecessary, feel free to make it redundant
    
 
-    public Account(String username, String password, String email, String phone, int id)
+    public Account(String username, String password)
     {
         this.username = username;
         this.password = password;
-        this.email = email;
-        this.phone = phone;
-        this.id = id;
     }
 
     
