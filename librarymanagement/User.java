@@ -8,6 +8,10 @@ package librarymanagement;
  *
  * @author szakr
  */
-public class User {
+public class User extends Account{
+
+    public User(String accountID, String password) {
+        super(accountID, password);
+    }
     
 }
