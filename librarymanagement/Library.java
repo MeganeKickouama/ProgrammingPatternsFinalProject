@@ -4,10 +4,40 @@
  */
 package librarymanagement;
 
+import java.util.Hashtable;
+
 /**
  *
  * @author szakr
+ * @author kmega
  */
 public class Library {
+
+    public static Library instance = null;
     
+    static Hashtable<Integer, Book> bookDatabase = new Hashtable<>();
+    static Hashtable<Integer, User> userDatabase = new Hashtable<>();
+    static Hashtable<Integer, Supplier> supplierDatabase = new Hashtable<>();
+
+    static final String databaseFile = "";
+
+    private Library()
+    {
+        
+    }
+
+    public static Library getLibrary()
+    {
+        if (instance == null)
+        {
+            return new Library();
+        }
+
+        return instance;
+    }
+
+    public static void addBook(int bookID, Book book) // book properties
+    {
+        bookDatabase.put(bookID, book);
+    }
 }
