@@ -15,9 +15,9 @@ public class Library {
     public static Library instance = null;
     
     static Hashtable<Integer, Book> bookDatabase = new Hashtable<>();
-    static Hashtable<Integer, User> userDatabase = new Hashtable<>();
-    static Hashtable<Integer, Supplier> supplierDatabase = new Hashtable<>();
-    static Hashtable<Integer, Staff> staffDatabase = new Hashtable<>();
+    static Hashtable<Integer, Account> userDatabase = new Hashtable<>();
+    static Hashtable<Integer, Account> supplierDatabase = new Hashtable<>();
+    static Hashtable<Integer, Account> staffDatabase = new Hashtable<>();
 
 
     static final String databaseFile = "";
