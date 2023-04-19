@@ -13,13 +13,13 @@ public class
     
     Account {
     
-    private String username;
+    private String accountID;
     private String password;
    
 
-    public Account(String username, String password)
+    public Account(String accountID, String password)
     {
-        this.username = username;
+        this.accountID = accountID;
         this.password = password;
     }
 
