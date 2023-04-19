@@ -3,27 +3,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package librarymanagement;
-
+import java.util.Hashtable;
 /**
  *
  * @author szakr
  */
 public class Staff extends Account {
-    
-    /*
-    Tentative Java import(s): 
-    import java.util.ArrayList;
-    import java.util.Hashtable; OR import java.util.HashMap;
-    import java.util.List;
-    */
-    
+
     //private Hashtable<Integer, Book> books;  
-    //private Hashtable<Integer, User> members;
+    //private Hashtable<String, User> members;
     //May be alternatively <String, Book> or <String, User>
     
-     public Staff(String username, String password, String email, String phone, int id) 
+     public Staff(String username, String password) 
      {
-        super(username, password, email, phone, id);
+        super(username, password);
      }
     
      public Book addBook(Book book) 
