@@ -8,7 +8,10 @@ package librarymanagement;
  *
  * @author szakr
  */
-public class Account {
+public class 
+    
+    
+    Account {
     
     private String username;
     private String password;
