@@ -24,12 +24,15 @@ public class Account {
      public Book searchBook(String bookTitle) 
      {
         // Code to search for a book in the library
+        return null;
+        // Code to search for a book in the library
      }
     
     //Will add getters and setters for all fields later
     @Override
     public String toString() {
-        return "accountID=" + accountID + ", password=" + password ;
+        
+        return "\t"+accountID+"\t\t"+password+"\n";
     }
 
 }
