@@ -7,7 +7,6 @@ package librarymanagement;
 import java.util.Hashtable;
 
 /**
- *
  * @author szakr
  * @author kmega
  */
@@ -18,6 +17,8 @@ public class Library {
     static Hashtable<Integer, Book> bookDatabase = new Hashtable<>();
     static Hashtable<Integer, User> userDatabase = new Hashtable<>();
     static Hashtable<Integer, Supplier> supplierDatabase = new Hashtable<>();
+    static Hashtable<Integer, Staff> staffDatabase = new Hashtable<>();
+
 
     static final String databaseFile = "";
 
@@ -36,8 +37,8 @@ public class Library {
         return instance;
     }
 
-    public static void addBook(int bookID, Book book) // book properties
+    public static void reserialize()
     {
-        bookDatabase.put(bookID, book);
+
     }
 }
