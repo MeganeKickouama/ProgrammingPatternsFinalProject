@@ -8,6 +8,10 @@ package librarymanagement;
  *
  * @author szakr
  */
-public class Supplier {
+public class Supplier extends Account{
+
+    public Supplier(String accountID, String password) {
+        super(accountID, password);
+    }
     
 }
