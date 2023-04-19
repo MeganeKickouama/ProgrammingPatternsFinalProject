@@ -27,5 +27,9 @@ public class Account {
      }
     
     //Will add getters and setters for all fields later
+    @Override
+    public String toString() {
+        return "accountID=" + accountID + ", password=" + password ;
+    }
 
 }
