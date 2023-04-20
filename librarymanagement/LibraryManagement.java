@@ -4,6 +4,10 @@
  */
 package librarymanagement;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
 /**
  *
  * @author szakr
@@ -30,9 +34,27 @@ public class LibraryManagement {
             acc = loginFact.createAccountType(account);
             
         }
-        System.out.println("Supplier");
-        System.out.println("Key\t\tAccount ID      Password");
-        System.out.println(Library.supplierDatabase);
+        //System.out.println("Supplier");
+        //System.out.println("Key\t\tAccount ID      Password");
+        //System.out.println(Library.supplierDatabase);
+
+        Book test = new Book("Twilight", "Stephanie Meyer", 22);
+        try 
+        {
+            FileOutputStream fout = new FileOutputStream("..\\database.txt");
+            ObjectOutputStream out = new ObjectOutputStream(fout);
+
+            out.writeObject(test);
+            out.flush();
+
+            out.close();
+            System.out.println("success");
+        } 
+        catch (IOException e)
+        {
+            System.out.println(e);
+        }
+        Library.reserialize();
     }
     
 }
