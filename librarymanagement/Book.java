@@ -31,6 +31,4 @@ public class Book implements Serializable {
         count ++;
         return count;
     }
-
-
 }
